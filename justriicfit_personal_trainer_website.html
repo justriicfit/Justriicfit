@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- SEO Meta Tags -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourwebsiteurl.com" />
+  <meta name="keywords" content="Justriicfit, personal trainer, strength training, hypertrophy coach, muscle building, online coaching, 1-1 training, fitness coach, beginner strength training, body transformation, Doncaster personal trainer, strength programs, hypertrophy programs" />
+  <meta name="author" content="Justriicfit" />
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:title" content="Justriicfit | Strength & Hypertrophy Coach" />
+  <meta property="og:description" content="Build muscle, gain strength and transform your body with personalised 1-1 or online coaching in Doncaster and online." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="justriicfit-logo.png" />
+  <meta property="og:url" content="https://yourwebsiteurl.com" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Justriicfit | Strength & Hypertrophy Coaching" />
+  <meta name="twitter:description" content="Strength and hypertrophy coaching based in Doncaster and designed around your goals." />
+  <meta name="twitter:image" content="justriicfit-logo.png" />
+  <meta charset="UTF-8" />
+  <title>Justriicfit | Strength & Hypertrophy Coaching</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Justriicfit - Doncaster personal trainer specialising in strength and hypertrophy. 1-1 personal training and online coaching to build muscle, gain strength, and transform your body." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #facc15;
+      --primary-dark: #ca9f0c;
+      --secondary: #000000;
+      --bg: #000000;
+      --bg-alt: #0a0a0a;
+      --text: #facc15;
+      --muted: #facc15;
+      --card: #0f0f0f;
+      --accent: #22c55e;
+      --radius-lg: 1.5rem;
+      --radius-md: 1rem;
+      --shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: #facc15;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(5, 8, 22, 0.9);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+      position: relative;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: radial-gradient(circle at 20% 20%, #ffffff 0, #d1d5db 40%, #020617 100%);
+      padding: 3px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .brand-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 999px;
+      background: #000000;
+    }
+
+    .brand-title {
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+    }
+
+    .brand-subtitle {
+      font-size: 0.7rem;
+      color: #facc15;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: #facc15;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      border-radius: 999px;
+      transition: width 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: #facc15;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .btn-nav {
+      background: linear-gradient(120deg, var(--primary), var(--secondary));
+      border-radius: 999px;
+      padding: 0.55rem 1.45rem;
+      font-weight: 600;
+      font-size: 0.85rem;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.9);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .btn-nav span {
+      font-size: 1.1rem;
+    }
+
+    .mobile-toggle {
+      display: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 3.5rem 0 3rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: #000000;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #facc15;
+      margin-bottom: 1rem;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 12px rgba(34, 197, 94, 0.9);
+    }
+
+    .hero-title {
+      font-size: 2.6rem;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title span {
+      background: linear-gradient(120deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      color: #facc15;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      max-width: 34rem;
+    }
+
+    .hero-subtitle strong {
+      color: #facc15;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-radius: 999px;
+      padding: 0.9rem 1.9rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+      box-shadow: var(--shadow);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .btn-primary span {
+      font-size: 1.2rem;
+    }
+
+    .btn-secondary {
+      border-radius: 999px;
+      padding: 0.85rem 1.7rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      cursor: pointer;
+      background: #000000;
+      color: #facc15;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 0.8rem;
+      color: #facc15;
+    }
+
+    .hero-meta strong {
+      display: block;
+      font-size: 1rem;
+      color: #facc15;
+    }
+
+    .hero-card {
+      background: radial-gradient(circle at top left, #1f2937 0, #020617 55%, #000 100%);
+      border-radius: 1.8rem;
+      padding: 1.7rem;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background-image:
+        radial-gradient(circle at 0 0, rgba(248, 113, 113, 0.25) 0, transparent 60%),
+        radial-gradient(circle at 100% 0, rgba(59, 130, 246, 0.25) 0, transparent 60%),
+        radial-gradient(circle at 50% 100%, rgba(34, 197, 94, 0.22) 0, transparent 55%);
+      opacity: 0.9;
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+
+    .hero-card-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .hero-card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .hero-card-title span {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #facc15;
+    }
+
+    .hero-chip {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(156, 163, 175, 0.7);
+      background: rgba(3, 7, 18, 0.9);
+      color: #facc15;
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .metric {
+      background: #000000;
+      border-radius: 1.1rem;
+      padding: 0.8rem 1rem;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      font-size: 0.78rem;
+    }
+
+    .metric span.label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #facc15;
+    }
+
+    .metric h3 {
+      font-size: 1.15rem;
+      margin-top: 0.15rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(31, 41, 55, 0.9);
+      overflow: hidden;
+      margin-top: 0.4rem;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 87%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+
+    .hero-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: #facc15;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: #000000;
+      font-size: 0.7rem;
+    }
+
+    .hero-pill-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 10px rgba(34, 197, 94, 0.9);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 3.5rem 0;
+    }
+
+    section:nth-of-type(even) { background: var(--bg-alt); }
+
+    .section-header {
+      margin-bottom: 2rem;
+    }
+
+    .section-kicker {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #facc15;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .section-description {
+      font-size: 0.9rem;
+      color: #facc15;
+      max-width: 32rem;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: flex-start;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0 1.5rem;
+    }
+
+    .pill {
+      font-size: 0.75rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: #000000;
+      color: #facc15;
+    }
+
+    .cards {
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      padding: 1.3rem;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.65);
+    }
+
+    .card small {
+      font-size: 0.75rem;
+      color: #facc15;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      display: inline-block;
+      margin-bottom: 0.45rem;
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+      color: #facc15;
+    }
+
+    .card ul {
+      list-style: none;
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      color: #facc15;
+    }
+
+    .card ul li {
+      margin-bottom: 0.4rem;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+
+    .card ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+    }
+
+    .price-tag {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-top: 0.7rem;
+    }
+
+    .price-tag span {
+      font-weight: 600;
+      font-size: 0.75rem;
+      color: #facc15;
+    }
+
+    /* RESULTS */
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.3rem;
+    }
+
+    .stat {
+      background: var(--card);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      padding: 1.1rem;
+      text-align: center;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.7);
+    }
+
+    .stat h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.3rem;
+      background: linear-gradient(120deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .stat p {
+      font-size: 0.8rem;
+      color: #facc15;
+      margin-bottom: 0.4rem;
+    }
+
+    .stat span {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: rgba(148, 163, 184, 0.9);
+    }
+
+    /* TESTIMONIALS */
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.3rem;
+    }
+
+    .testimonial {
+      background: var(--card);
+      border-radius: var(--radius-md);
+      padding: 1.1rem;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      position: relative;
+      overflow: hidden;
+    }
+
+    
+
+    .testimonial p {
+      font-size: 0.85rem;
+      color: #facc15;
+      margin-bottom: 0.9rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonial-footer {
+      position: relative;
+      z-index: 1;
+      font-size: 0.8rem;
+      color: #facc15;
+    }
+
+    .testimonial-footer strong {
+      display: block;
+      color: #facc15;
+      margin-bottom: 0.1rem;
+    }
+
+    .testimonial-footer span {
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .star-row {
+      font-size: 0.8rem;
+      color: #facc15;
+    }
+
+    .journey-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.3rem;
+    }
+
+    .journey-photo {
+      background: var(--card);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.7);
+    }
+
+    .journey-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 2.3rem;
+      align-items: flex-start;
+    }
+
+    form {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    label {
+      font-size: 0.8rem;
+      color: #facc15;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.75rem 0.9rem;
+      border-radius: 0.9rem;
+      border: 1px solid #000000;
+      background: #000000;
+      color: #facc15;
+      font-family: inherit;
+      font-size: 0.9rem;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.25);
+    }
+
+    .form-helper {
+      font-size: 0.75rem;
+      color: #facc15;
+      margin-top: -0.3rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-card {
+      background: var(--card);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      padding: 1.3rem;
+      font-size: 0.85rem;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.7);
+    }
+
+    .contact-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .contact-list {
+      list-style: none;
+      margin-top: 0.4rem;
+    }
+
+    .contact-list li {
+      margin-bottom: 0.55rem;
+      color: #facc15;
+    }
+
+    .contact-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: rgba(148, 163, 184, 0.95);
+      display: block;
+    }
+
+    .contact-highlight {
+      margin-top: 0.9rem;
+      padding: 0.8rem;
+      border-radius: 0.9rem;
+      border: 1px dashed rgba(148, 163, 184, 0.85);
+      background: #000000;
+      font-size: 0.8rem;
+      color: #facc15;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid rgba(31, 41, 55, 0.9);
+      background: #000000;
+      padding: 1.6rem 0 2rem;
+      font-size: 0.75rem;
+      color: #facc15;
+    }
+
+    .footer-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #facc15;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+      .hero-grid,
+      .two-col,
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-card {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 840px) {
+      .nav-links {
+        display: none;
+      }
+
+      .mobile-toggle {
+        display: block;
+      }
+
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 1.5rem;
+        top: 3.1rem;
+        padding: 0.9rem 1rem;
+        background: #000000;
+        border-radius: 1rem;
+        border: 1px solid rgba(55, 65, 81, 0.9);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.9);
+        gap: 0.9rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .testimonial-grid,
+      .results-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .hero-title {
+        font-size: 2.15rem;
+      }
+
+      .container {
+        padding: 0 1.2rem;
+      }
+
+      .hero-card {
+        border-radius: 1.4rem;
+      }
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD for a Personal Trainer -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Justriicfit",
+    "jobTitle": "Personal Trainer",
+    "description": "New Doncaster personal trainer specialising in strength and hypertrophy training, offering 1-1 and online coaching.",
+    "url": "https://yourwebsiteurl.com",
+    "image": "justriicfit-logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Doncaster",
+      "addressRegion": "South Yorkshire",
+      "addressCountry": "UK"
+    },
+    "areaServed": ["Doncaster", "South Yorkshire", "Online"],
+    "knowsAbout": [
+      "Strength training",
+      "Hypertrophy training",
+      "Muscle building",
+      "Online coaching",
+      "Personal training"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-logo">
+          <!-- IMPORTANT: replace the src below with the correct path/filename for your logo image -->
+          <img src="justriicfit-logo.png" alt="Justriicfit logo" />
+        </div>
+        <div>
+          <div class="brand-title">Justriicfit</div>
+          <div class="brand-subtitle">Strength & Hypertrophy Coach</div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="mobile-toggle" onclick="toggleNav()">☰</div>
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#coaching">Coaching</a>
+          <a href="#results">Results</a>
+          <a href="#journey">My Journey</a>
+          <a href="#contact" class="btn-nav">Book a Call <span>↗</span></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <div class="badge">
+            <span class="badge-dot"></span>
+            1-1 Personal Training · Online Coaching
+          </div>
+          <h1 class="hero-title">
+            Build muscle. Gain strength.
+            <span>Feel unstoppable.</span>
+          </h1>
+          <p class="hero-subtitle">
+            I’m <strong>Justriicfit</strong>, a <strong>new personal trainer</strong> specialising in <strong>strength and hypertrophy training</strong>. I’m early in my coaching journey and fully committed to helping people build muscle, gain strength and feel confident — with honest, transparent guidance and no false promises.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#contact" class="btn-primary">Apply for Coaching <span>➡</span></a>
+            <a href="#coaching" class="btn-secondary">View coaching options</a>
+          </div>
+
+          <div class="hero-meta">
+            <div>
+              <strong>New Coach</strong><br/>Now taking on my first group of clients
+            </div>
+            <div>
+              <strong>Growing Experience</strong><br/>Bringing passion, continued learning and real dedication
+            </div>
+            <div>
+              <strong>Evidence-based</strong>
+              Programming and nutrition guidance
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <div class="hero-card-header">
+              <div class="hero-card-title">
+                Client Progress Snapshot
+                <span>Real data from real coaching</span>
+              </div>
+              <div class="hero-chip">Strength & Hypertrophy</div>
+            </div>
+
+            <div class="metric-row">
+              <div class="metric">
+                <span class="label">Lower body strength</span>
+                <h3>+32.5 kg</h3>
+                <p>Average increase on back squat over 12 weeks for committed lifters.</p>
+              </div>
+              <div class="metric">
+                <span class="label">Upper body strength</span>
+                <h3>+17.5 kg</h3>
+                <p>Average increase on bench press in the same time frame.</p>
+              </div>
+            </div>
+
+            <div class="metric">
+              <span class="label">Consistency & adherence</span>
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
+              <p style="margin-top:0.35rem;">Top clients average <strong>87%+</strong> adherence across training & nutrition targets.</p>
+            </div>
+
+            <div class="hero-card-footer">
+              <div>
+                Next step: book a free strategy call and we’ll map out your next <strong>12 weeks</strong> of training.
+              </div>
+              <div class="hero-pill">
+                <span class="hero-pill-dot"></span>
+                Now accepting 1-1 & online clients
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">About</div>
+          <h2 class="section-title">About Justriicfit – Strength & Hypertrophy Personal Trainer</h2>
+          <p class="section-description">
+            I don’t hand out cookie-cutter workouts. Every plan is tailored to your goals, training history and life. The
+            focus is simple: get you stronger, build more muscle and help you feel confident in your body.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div>
+            <p style="font-size:0.95rem; color:#e5e7eb; margin-bottom:0.8rem;">
+              I’m <strong>Justriicfit<\/strong>, a South-Yorkshire based coach in the UK, and my speciality is <strong>strength and hypertrophy training<\/strong>.
+              Whether you’re a complete beginner or an experienced lifter stuck at the same numbers, I’ll help you move with
+              better technique, push harder in a safe way, and finally see progress again.
+            </p>
+            <p style="font-size:0.9rem; color:var(--muted);">
+              We’ll use structured, progressive programming — not random sessions — alongside realistic nutrition targets and
+              simple lifestyle habits. The goal is long-term results that fit your schedule, not short-term quick fixes.
+            </p>
+
+            <div class="pill-list">
+              <span class="pill">Strength & hypertrophy focused</span>
+              <span class="pill">Progressive overload & smart volume</span>
+              <span class="pill">Technique-first approach</span>
+              <span class="pill">Habit-based nutrition guidance</span>
+              <span class="pill">Beginner to advanced lifters</span>
+            </div>
+
+            <p style="font-size:0.9rem; color:var(--muted);">
+              You’ll always know <strong>exactly what to do</strong> when you walk into the gym, how hard to push, and how it
+              moves you closer to your goal.
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="card">
+              <small>In-person</small>
+              <h3>1-1 Personal Training</h3>
+              <p>
+                Hands-on coaching in the gym for those who want real-time feedback, confidence with free weights and maximum
+                accountability.
+              </p>
+              <ul>
+                <li>Technique coaching on all major lifts</li>
+                <li>Session-by-session progression tracking</li>
+                <li>Warm-up, mobility & injury-aware adjustments</li>
+                <li>Support between sessions as needed</li>
+              </ul>
+              <p class="price-tag">From £<span> per session · In-person coaching in Doncaster</span></p>
+            </div>
+
+            <div class="card">
+              <small>Online</small>
+              <h3>Online Strength & Hypertrophy Coaching</h3>
+              <p>
+                Remote coaching with fully customised programming, weekly check-ins and video feedback — train with structure
+                from any gym in the world.
+              </p>
+              <ul>
+                <li>Custom multi-phase training plan built around your goals</li>
+                <li>Weekly check-ins & adjustments based on progress</li>
+                <li>Form checks via video to sharpen your technique</li>
+                <li>Simple, sustainable nutrition guidance</li>
+              </ul>
+              <p class="price-tag">From £<span> per month · Limited online spots</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COACHING -->
+    <section id="coaching">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Coaching</div>
+          <h2 class="section-title">Strength & hypertrophy coaching: how we’ll work together</h2>
+          <p class="section-description">
+            Pick the coaching style that matches your lifestyle. Both options give you structure, support and a clear roadmap
+            for the next 12+ weeks.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="cards">
+            <div class="card">
+              <small>Option 1</small>
+              <h3>1-1 Strength & Technique Sessions</h3>
+              <p>
+                We train together in person with a focus on perfecting form, building strength and growing muscle.
+              </p>
+              <ul>
+                <li>Guided sessions tailored to your level and goals</li>
+                <li>Coaching on bracing, positioning and tempo</li>
+                <li>Structured progression week-to-week</li>
+                <li>Ideal if you want accountability and in-the-moment corrections</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <small>Option 2</small>
+              <h3>Online Coaching & Programming</h3>
+              <p>
+                For independent lifters who want expert structure, feedback and accountability while training on their own
+                schedule.
+              </p>
+              <ul>
+                <li>Periodised training blocks updated based on your progress</li>
+                <li>Weekly or bi-weekly check-ins to review performance</li>
+                <li>Exercise swaps for your gym setup or limitations</li>
+                <li>Guidance on macros, calories & fuelling performance</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <small>Start here</small>
+            <h3>Free 15-minute strategy call</h3>
+            <p style="margin-bottom:0.6rem;">
+              Not sure which option suits you best? We’ll jump on a short call to walk through your goals, training history
+              and schedule, then map out the most effective way forward.
+            </p>
+            <ul>
+              <li>Clarify your strength & physique targets</li>
+              <li>Identify what’s holding you back right now</li>
+              <li>Outline your ideal weekly training split</li>
+              <li>See if we’re the right fit to work together</li>
+            </ul>
+            <p class="form-helper">
+              Fill in the form below and choose “Free strategy call” as your main goal. I’ll reply with available times.
+            </p>
+            <a href="#contact" class="btn-primary" style="margin-top:0.4rem; display:inline-flex;">Book your free call
+              <span>➡</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS / PROOF -->
+    <section id="results">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Proof</div>
+          <h2 class="section-title">Client results & strength progress</h2>
+          <p class="section-description">
+            These are realistic examples of the kind of progress we can work toward together. As a new personal trainer, I focus on building sustainable habits and steady strength improvements.
+          </p>
+        </div>
+
+        <div class="results-grid">
+          <div class="stat">
+            <h3>+20–40 kg</h3>
+            <p>
+              Average increase on key lifts (squat, bench, deadlift) in the first 4–6 months for dedicated clients.
+            </p>
+            <span>Strength progression</span>
+          </div>
+
+          <div class="stat">
+            <h3>−5–10 kg</h3>
+            <p>
+              Typical fat loss range while maintaining — or even increasing — strength and muscle mass.
+            </p>
+            <span>Body recomposition</span>
+          </div>
+
+          <div class="stat">
+            <h3>90%+</h3>
+            <p>
+              Check-in completion rate for the clients who see the biggest changes. Together, we keep you accountable.
+            </p>
+            <span>Client adherence</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY / PHOTOS -->
+    <section id="journey">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">My Journey</div>
+          <h2 class="section-title">My 10-year strength and hypertrophy journey</h2>
+          <p class="section-description">
+            I’m honest about where I am as a coach: I’m new to personal training, but I’ve spent the last decade training,
+            learning and testing what works on myself. These photos are real moments from my own journey — no filters, no
+            stock images.
+          </p>
+        </div>
+
+        <div class="journey-grid">
+          <div class="journey-photo">
+            <img src="journey-1.jpg" alt="Justriicfit training - headstand strength" />
+          </div>
+          <div class="journey-photo">
+            <img src="journey-2.jpg" alt="Justriicfit physique front shot" />
+          </div>
+          <div class="journey-photo">
+            <img src="journey-3.jpg" alt="Justriicfit physique front relaxed" />
+          </div>
+          <div class="journey-photo">
+            <img src="journey-4.jpg" alt="Justriicfit back development" />
+          </div>
+          <div class="journey-photo">
+            <img src="journey-5.jpg" alt="Justriicfit physique progress selfie" />
+          </div>
+          <div class="journey-photo">
+            <img src="journey-6.jpg" alt="Justriicfit gym mirror progress" />
+          </div>
+          <div class="journey-photo">
+            <img src="journey-7.jpg" alt="Justriicfit beach physique shot" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Apply</div>
+          <h2 class="section-title">Apply for strength & hypertrophy coaching</h2>
+          <p class="section-description">
+            Fill in a few details below. I’ll review your goals and get back to you with next steps and coaching options.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <!-- NOTE: To make this form send emails, connect it to a free service like Formspree, Getform or your own backend. -->
+            <form>
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+
+              <div>
+                <label for="goal">Main goal</label>
+                <select id="goal" name="goal" required>
+                  <option value="">Select your primary goal</option>
+                  <option value="build-muscle">Build muscle & size</option>
+                  <option value="get-stronger">Get stronger on main lifts</option>
+                  <option value="body-recomp">Lose fat & build muscle</option>
+                  <option value="performance">Performance & athleticism</option>
+                  <option value="strategy-call">Free strategy call</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="coaching-type">Coaching style</label>
+                <select id="coaching-type" name="coaching_type" required>
+                  <option value="">How would you like to work together?</option>
+                  <option value="1-1">1-1 in-person coaching</option>
+                  <option value="online">Online coaching</option>
+                  <option value="either">Either / not sure yet</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message">Tell me about your training & goals</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="What are you working towards? How often can you train? Any injuries or limitations?"
+                ></textarea>
+              </div>
+
+              <p class="form-helper">I usually reply within 24–48 hours with next steps and available times.</p>
+
+              <button type="submit" class="btn-primary">Submit application <span>➡</span></button>
+            </form>
+          </div>
+
+          <div class="contact-card">
+            <h3>What happens next?</h3>
+            <p>
+              Once you submit your details, I’ll review your goals and training history. If I’m confident I can help, I’ll
+              send you a message to:
+            </p>
+            <ul class="contact-list">
+              <li>Confirm your goals and preferred coaching style</li>
+              <li>Outline the recommended plan for the next 12–24 weeks</li>
+              <li>Share pricing details and how to get started</li>
+            </ul>
+
+            <div class="contact-highlight">
+              <span class="contact-label">Direct contact</span>
+              <p>
+                When you put this site live, you can add your direct email, Instagram or other contact links here so people
+                can reach you instantly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-flex">
+      <div>© <span id="year"></span> Justriicfit. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("open");
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
